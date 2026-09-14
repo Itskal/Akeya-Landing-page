@@ -1,0 +1,515 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Akeya — Your Hair's New Favourites</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,500&family=Inter:ital,wght@0,400;0,700;0,800;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href=" css\style.css"/>
+    <script src="js\script.js" defer></script>
+  </head>
+  <body>
+    <nav>
+      <!-- Logo -->
+      <a href="index.html" class="logo">
+        <img src="assests\logos.png" alt="Akeya Logo" />
+      </a>
+      <!-- Center Links -->
+      <div class="nav-center">
+        <a href="#collection">Our Products</a>
+        <a href="#about">About</a>
+        <a href="#reviews">Reviews</a>
+      </div>
+      <!-- Right Links -->
+      <div class="nav-right">
+        <a href="#faq">FAQs</a>
+        <a href="#contact" class="contact-button">Contact Us</a>
+      </div>
+      <button
+        class="menu-toggle"
+        id="burgerBtn"
+        type="button"
+        aria-label="Open menu"
+        aria-controls="mobileMenu"
+        aria-expanded="false"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
+
+    <!-- HERO -->
+    <main>
+      <section class="hero">
+        <!-- Hero text -->
+        <div class="hero-content">
+          <h1>
+            <span class="gold-text">YOUR HAIR’S</span>
+            <span class="green-text">NEW FAVOURITES</span>
+          </h1>
+
+          <a href="#collection" class="hero-button"> View Collections </a>
+        </div>
+
+        <!-- Small black scrunchie -->
+        <img src="assests\black scrunchie.png" alt="" class="black-scrunchie" />
+
+        <!-- Small cream scrunchie -->
+        <img src="assests\white scrunchie.png" alt="" class="cream-scrunchie" />
+
+        <!-- Main bonnet -->
+        <img
+          src="assests\leopard bonnet.png"
+          alt="AKEYA leopard print bonnet"
+          class="hero-bonnet"
+        />
+      </section>
+    </main>
+
+    <div class="mobile-menu" id="mobileMenu">
+      <div class="mobile-menu__top">
+        <img src="assests\logos.png" alt="Akeya logo" />
+        <button
+          class="mobile-menu__close"
+          id="closeBurger"
+          type="button"
+          aria-label="Close menu"
+        >
+          &times;
+        </button>
+      </div>
+      <a href="#collection">Our Products</a>
+      <a href="#about">About</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#faq">FAQs</a>
+      <a class="mobile-menu__cta" href="#contact">Contact Us</a>
+    </div>
+
+    <!-- COLLECTION -->
+    <section class="collection" id="collection">
+      <div class="container">
+        <h2 class="section-title display">Akeya's Collection</h2>
+        <div class="collection__hint">
+          <span>swipe to browse</span>
+          <img
+            src="https://www.figma.com/api/mcp/asset/3ee1d80e-17f4-4e33-a1e3-2ac36ff04166.svg"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="product-grid">
+        <article class="product-card">
+          <img
+            src="assests/lime-green scrunchie.png"
+            alt="Normal Satin Scrunchie"
+            class="product-card__img"
+          />
+          <div class="dots">
+            <span
+              class="dot active"
+              style="background: #a2b386"
+              data-image="assests/lime-green scrunchie.png"
+            ></span>
+            <span
+              class="dot"
+              style="background: #845764"
+              data-image="assests/light pink scrunchie.png"
+            ></span>
+            <span
+              class="dot"
+              style="background: #0c2b26"
+              data-image="assests/green scrunchie.png"
+            ></span>
+            <span
+              class="dot"
+              style="background: #8984ac"
+              data-image="assests/blue scrunchie.png"
+            ></span>
+          </div>
+          <h3 class="serif">Normal Satin Scrunchie</h3>
+          <span class="price">150 birr</span>
+        </article>
+        <article class="product-card">
+          <img
+            src="assests\black habesha scrunchie.png"
+            alt="Habesha Satin Scrunchie"
+            class="product-card__img"
+          />
+          <div class="dots">
+            <span
+              class="dot active"
+              style="background: #010207"
+              data-image="assests/black habesha scrunchie.png"
+            ></span>
+            <span
+              class="dot"
+              style="background: #cabcb0"
+              data-image="assests/cream habesha scrunchie.png"
+            ></span>
+            <span
+              class="dot"
+              style="background: #d13a71"
+              data-image="assests/red habesha scrunchie.png"
+            ></span>
+            <span
+              class="dot"
+              style="background: #e0e0e0"
+              data-image="assests/white habesha scrunhie.png"
+            ></span>
+          </div>
+          <h3 class="serif">Habesha Satin Scrunchie</h3>
+          <span class="price">200 birr</span>
+        </article>
+        <article class="product-card">
+          <img
+            src="assests\sage leopard bonnet.png"
+            alt="Silk Bonnet"
+            class="product-card__img"
+          />
+          <div class="dots">
+            <span
+              class="dot active"
+              style="background: #3e3f37"
+              data-image="assests/sage leopard bonnet.png"
+            ></span>
+            <span
+              class="dot"
+              style="background: #07090d"
+              data-image="assests/black bonnet.png"
+            ></span>
+            <span
+              class="dot"
+              style="background: #2a1e1a"
+              data-image="assests/brown bonnet.png"
+            ></span>
+            <span
+              class="dot"
+              style="background: #989f88"
+              data-image="assests/light green bonnet.png"
+            ></span>
+          </div>
+          <h3 class="serif">Silk Bonnet</h3>
+          <span class="price">450 birr</span>
+        </article>
+        <article class="product-card">
+          <img
+            src="assests\white headband.png"
+            alt="Satin Headband"
+            class="product-card__img"
+          />
+          <div class="dots">
+            <span
+              class="dot active"
+              style="background: #dddddc"
+              data-image="assests/white headband.png"
+            ></span>
+            <span
+              class="dot"
+              style="background: #bbbb85"
+              data-image="assests/green headband.png"
+            ></span>
+            <span
+              class="dot"
+              style="background: #ad9ebe"
+              data-image="assests/lilac headband.png"
+            ></span>
+            <span
+              class="dot"
+              style="background: #7b124d"
+              data-image="assests/red headband.png"
+            ></span>
+          </div>
+          <h3 class="serif">Satin Headband</h3>
+          <span class="price">250 birr</span>
+        </article>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about" id="about">
+      <h2 class="about__title display">About Akeya</h2>
+      <div class="about__grid">
+        <div class="about__top">
+          <img
+            class="about__img-main"
+            src="assests\afro.png"
+            alt="Akeya founder wearing satin bonnet"
+          />
+          <div class="about__side">
+            <p class="about__tagline display">
+              <span class="gold">Every knot</span> is tied by hand, to embrace
+              and care for your beauty.
+            </p>
+            <div class="about__tags">
+              <div class="tag-pill">hand tied-small batches</div>
+              <div class="tag-pill">100% mulberry satin</div>
+              <div class="tag-pill">Made and shipped locally</div>
+            </div>
+          </div>
+        </div>
+        <div class="about__content">
+          <div class="about__quote-copy">
+            <p class="about__quote">
+              "I started Akeya on my kitchen table because I couldn't find satin
+              bonnets that felt like they were actually made for us — soft where
+              it matters, sized right, and pretty enough to wear outside the
+              house."
+            </p>
+            <p class="about__founder">Founder, Akeya</p>
+            <p class="about__location">Addis Ababa, Ethiopia</p>
+          </div>
+          <img
+            class="about__img-small"
+            src="assests\scrunchie pack.png"
+            alt="Handmade satin scrunchies"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- REVIEWS -->
+
+    <section class="reviews-section" id="reviews">
+      <div class="reviews-slider" id="reviewsSlider">
+        <!-- PAGE 1 — HANNA + EDEN -->
+        <div class="review-page">
+          <div class="review-card">
+            <div class="review-name">HANNA S.</div>
+
+            <img src="assests\hanna.png" class="review-img" />
+
+            <div class="stars">★ ★ ★ ★</div>
+
+            <p>
+              “The bonnet is so soft and comfortable! It stayed on all night and
+              my hair looked so much better in the morning. Definitely ordering
+              another one.”
+            </p>
+          </div>
+
+          <div class="review-card">
+            <div class="review-name">EDEN K.</div>
+
+            <img src="assests\eden.png" class="review-img" />
+
+            <div class="stars">★ ★ ★ ★</div>
+
+            <p>
+              “I love that I can wear it in my hair and keep it on my wrist when
+              I’m not using it. It’s cute either way, and it doesn’t pull on my
+              hair.”
+            </p>
+          </div>
+        </div>
+
+        <!-- PAGE 2 — SARA + SIMON -->
+        <div class="review-page">
+          <div class="review-card">
+            <div class="review-name">SARA T.</div>
+
+            <img src="assests\sara.png" class="review-img" />
+
+            <div class="stars">★ ★ ★ ★</div>
+
+            <p>
+              “The cutest scrunchie ever! I literally wear it in my hair and on
+              my wrist all day. It looks good either way and doesn’t feel too
+              tight.”
+            </p>
+          </div>
+
+          <div class="review-card">
+            <div class="review-name">SIMON T.</div>
+
+            <img src="assests\simon.png" class="review-img" />
+
+            <div class="stars">★ ★ ★ ★</div>
+
+            <p>
+              “I got the bonnet for my cornrows and twists, and it’s been
+              perfect. It keeps everything neat while I sleep without feeling
+              too tight. Super comfortable and definitely part of my routine
+              now.”
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- DOTS -->
+      <div class="review-dots">
+        <button
+          class="review-dot desktop-review-dot active"
+          id="firstDot"
+          aria-label="Show reviews one and two"
+        ></button>
+
+        <button
+          class="review-dot desktop-review-dot"
+          id="secondDot"
+          aria-label="Show reviews three and four"
+        ></button>
+
+        <button
+          class="review-dot mobile-review-dot active"
+          data-review-index="0"
+          aria-label="Show review one"
+        ></button>
+        <button
+          class="review-dot mobile-review-dot"
+          data-review-index="1"
+          aria-label="Show review two"
+        ></button>
+        <button
+          class="review-dot mobile-review-dot"
+          data-review-index="2"
+          aria-label="Show review three"
+        ></button>
+        <button
+          class="review-dot mobile-review-dot"
+          data-review-index="3"
+          aria-label="Show review four"
+        ></button>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq" id="faq">
+      <div class="container">
+        <h2 class="section-title display">FAQs</h2>
+        <p class="faq__sub display">Find answers to your questions</p>
+      </div>
+      <div class="faq__list">
+        <div class="faq-item">
+          <button type="button" class="faq-item__row" aria-expanded="false">
+            <h3>Why use satin bonnets?</h3>
+            <img class="chev" src="assests\drop_down.png" alt="" />
+          </button>
+          <div class="faq-item__answer">
+            <p>
+              Satin bonnets protect your hair from friction while you sleep,
+              locking in moisture and preventing breakage, frizz, and tangles —
+              so you wake up with your style intact.
+            </p>
+            <button
+              type="button"
+              class="faq-close"
+              aria-label="Hide answer"
+            ></button>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button type="button" class="faq-item__row" aria-expanded="false">
+            <h3>Why choose Akeya?</h3>
+            <img class="chev" src="assests/drop_down.png" />
+          </button>
+          <div class="faq-item__answer">
+            <p>
+              Every Akeya piece is hand tied in small batches from 100% mulberry
+              satin, sized right and made locally in Addis Ababa — made for us,
+              by us.
+            </p>
+            <button
+              type="button"
+              class="faq-close"
+              aria-label="Hide answer"
+            ></button>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button type="button" class="faq-item__row" aria-expanded="false">
+            <h3>How long does order take?</h3>
+            <img class="chev" src="assests\drop_down.png" alt="" />
+          </button>
+          <div class="faq-item__answer">
+            <p>
+              Orders are hand made to order and typically ship within 3–5
+              business days, with delivery across Addis Ababa in 1–2 days after
+              that.
+            </p>
+            <button
+              type="button"
+              class="faq-close"
+              aria-label="Hide answer"
+            ></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+      <div class="container">
+        <h2 class="section-title display">Get in Touch with Us</h2>
+      </div>
+      <div class="contact-card">
+        <div class="contact-row">
+          <img class="icon" src="assests/phone.png" alt="" />
+          <span class="label display">Phone:</span>
+          <a class="value contact-link" href="tel:+251935447899"
+            >+251 935447899</a
+          >
+        </div>
+        <div class="contact-row">
+          <img class="icon" src="assests/email.png" alt="" />
+          <span class="label display">Email:</span>
+          <a class="value contact-link" href="mailto:Akeya@gmail.com"
+            >Akeya@gmail.com</a
+          >
+        </div>
+        <div class="contact-row">
+          <img class="icon" src="assests/insta.png" alt="" />
+          <span class="label display">Instagram:</span>
+          <a
+            class="value contact-link"
+            href="https://www.instagram.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Akeya</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <!-- LEFT SIDE -->
+      <div class="footer-left">
+        <img src="assests\footer_logo.png" alt="AKEYA" class="footer-logo" />
+      </div>
+
+      <!-- RIGHT SIDE -->
+      <div class="footer-right">
+        <!-- Phone -->
+        <div class="contact-item phone-item">
+          <img src="assests\phone_icon.png" />
+          <span>+251-911-111-111</span>
+        </div>
+
+        <div class="contact-item email-item">
+          <img src="assests\email_icon.png" />
+          <span>AKEYA11@GMAIL.COM</span>
+        </div>
+
+        <!-- Social media -->
+        <div class="social-links">
+          <a href="#" aria-label="TikTok">
+            <img src="assests\tiktok_icon.png" />
+          </a>
+
+          <a href="#" aria-label="Instagram">
+            <img src="assests\instgarm_icon.png" />
+          </a>
+
+          <a href="#" aria-label="Pinterest">
+            <img src="assests\pintrest_icon.png" />
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
