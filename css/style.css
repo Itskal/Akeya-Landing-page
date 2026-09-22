@@ -345,7 +345,7 @@ body {
   top: 10%;
   left: 45%;
 
-  z-index: 100;
+  z-index: 2;
 
   display: block;
   object-fit: contain;
@@ -444,7 +444,7 @@ body {
 /* ---------- COLLECTION ---------- */
 .collection {
   background: var(--bg);
-  padding: 64px 0 96px;
+  padding: 32px 0 96px;
 }
 .section-title {
   font-family: "Bebas Neue", sans-serif;
@@ -1118,11 +1118,19 @@ footer {
   }
 
   .hero {
-    flex-direction: column;
-    padding: 32px 20px 48px;
-    min-height: 0;
-    align-items: flex-start;
-    text-align: left;
+    height: min(560px, calc(100svh - 68px));
+    min-height: 460px;
+    padding: 0 20px 32px;
+  }
+  .hero-content {
+    top: 10%;
+    left: 20px;
+    right: 20px;
+    transform: none;
+  }
+  .hero-content h1 {
+    font-size: clamp(58px, 17vw, 86px);
+    line-height: 0.9;
   }
   .hero__text h1 {
     font-size: 40px;
@@ -1162,13 +1170,31 @@ footer {
     margin: 24px auto 0;
     font-size: 18px;
   }
+  .black-scrunchie {
+    width: 150px;
+    height: 150px;
+    top: 20%;
+    left: auto;
+    right: -8%;
+  }
+  .cream-scrunchie {
+    width: 88px;
+    top: 20%;
+    left: 3%;
+    z-index: 2;
+  }
+  .hero-bonnet {
+    width: 28%;
+    right: 66%;
+    bottom: 80%;
+  }
 
   .section-title {
     font-size: 32px;
     margin-bottom: 8px;
   }
   .collection {
-    padding: 40px 0 56px;
+    padding: 20px 0 56px;
   }
   .collection__hint {
     display: flex;
@@ -1209,11 +1235,11 @@ footer {
     font-size: 16px;
   }
   .dot {
-    width: 10px;
-    height: 10px;
+    width: 16px;
+    height: 16px;
   }
   .product-card .dots {
-    gap: 9px;
+    gap: 10px;
     margin: 8px 0;
   }
 
